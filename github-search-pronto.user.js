@@ -43,7 +43,7 @@ search_field.addEventListener('keydown', function(e) {
 		var query = search_field.value;
 
 		// Get "https://github.com/owner/repo"
-		var repo_url = window.location.href.split('/').slice(0, 5).join('/')
+		var repo_url = window.location.href.split('/').slice(0, 5).join('/');
 
 		window.location.assign(
 			repo_url +
@@ -57,5 +57,5 @@ search_field.addEventListener('keydown', function(e) {
 
 
 function is_visible(node) {
-	return node && node.offsetParent !== null
+	return node && node.offsetParent !== null;
 }
